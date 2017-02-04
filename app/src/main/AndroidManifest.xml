@@ -2,15 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cf.xpuwangsheng.www.brainchildtools">
 
-    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:hardwareAccelerated="false"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,7 +22,8 @@
         </activity>
         <activity android:name=".MyFragment.MyFragmentActivity" />
         <activity android:name=".OpenCVExample.OpenCVActivity" />
-        <activity android:name=".PhotoIntent.PhotoIntentActivity"></activity>
+        <activity android:name=".PhotoIntent.PhotoIntentActivity" />
+        <activity android:name=".AsyncTaskLoader.AsyncTaskLoaderActivity"></activity>
     </application>
 
 </manifest>
